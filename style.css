@@ -27,17 +27,24 @@ body {
   padding: 15px;
   font-size: 2rem;
   text-align: right;
+  color: black;
   border: none;
   outline: none;
   background-color: #f1f1f1;
   border-radius: 5px;
   margin-bottom: 20px;
 }
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
 button {
   padding: 20px;
   font-size: 2rem;
   background-color: #f1f1f1;
   border-radius: 15px;
+  border: none;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -50,4 +57,19 @@ button.operator {
 }
 button.operator:hover {
   background-color: #34495e;
+}
+#equals {
+  background-color: #3498db;
+  color: white;
+  grid-column: span 4;
+}
+#equals:hover {
+  background-color: #2980b9;
+}
+#clear {
+  background-color: #e74c3c;
+  color: white;
+}
+#clear:hover {
+  background-color: #c0392b;
 }
